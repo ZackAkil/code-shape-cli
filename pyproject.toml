@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codeshape"
+version = "0.1.0"
+description = "Analyze codebase file-size distribution and Code Shape Score from the terminal."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+codeshape = "codeshape.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["codeshape*"]
